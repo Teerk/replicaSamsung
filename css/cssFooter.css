@@ -1,0 +1,30 @@
+.titulo-pie{
+    color: #fff;
+    font-size: 25px;
+}
+
+.ancla-pie{
+    padding-left: 10px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+
+.ancla-pie:hover{
+    padding-left: 15px;
+    color: rgb(150, 189, 245);
+    font-size: 17px;
+    text-decoration: none;
+    border-left: 3px solid rgb(6, 160, 216);
+}
+
+.credito-pie{
+    color: #fff;
+    font-size: 17px;
+}
+
+.salto-pie{
+    color: rgb(20, 19, 19);
+    width: 40px
+}

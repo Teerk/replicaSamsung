@@ -1,0 +1,61 @@
+.tarjeta-sound{
+    border: rgb(241, 239, 239) solid 1px;
+    text-align: center;
+    padding: 40px;
+    transition: all 1s ease;
+    
+}
+
+.tarjeta-sound:hover{
+    border: rgb(49, 49, 49) solid 1px;
+    text-align: center;
+    transform: translateY(-9px);
+}
+
+.tarjeta-sound:hover > img{
+    width: 99px;
+    transition: all 1s ease;
+}
+
+.animate-img-hero{
+    height: 350px;
+    transition: height 1s;
+    animation-duration: 1s;
+    animation-name: moverImagenHero;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.animate-img-hero-2{
+    position: absolute;
+    height: 350px;
+    transition: height 2s;
+    animation-duration: 2s;
+    animation-name: moverImagenHero;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    top: 40px;
+    right: 12%;;
+    z-index: -2;
+    opacity: .3;
+}
+
+
+@keyframes moverImagenHero {
+    0% {
+        height: 350px;
+    }
+
+    25% {
+        height: 355px;
+    }
+
+    50% {
+        height: 360px;
+    }
+
+    100% {
+        height: 365px;
+    }
+
+}

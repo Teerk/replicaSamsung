@@ -1,0 +1,73 @@
+/* REGLAS GENERALES */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.ubicar{
+    border: solid 2px greenyellow
+}
+
+
+/* ESPACIADOS */
+.p-40{
+    padding: 40px;
+}
+
+
+
+/* COLORES */
+.gris{
+    color:gray;
+}
+.negro{
+    color: black;
+}
+.blanco{
+    color: aliceblue;
+}
+
+/* FUNCIONES DE ALINEACION */
+.renglon{
+    display: flex;
+    justify-content: center;
+}
+.cont-50{
+    width: 50%;
+}
+
+
+.formulario >label{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.formulario >input{
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.btn-sitio{
+    height: 45px;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn-sitio:hover{
+    height: 45px;
+    width: 200px;
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+    font-size: 15px;
+}

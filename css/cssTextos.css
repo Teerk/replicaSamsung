@@ -1,0 +1,61 @@
+
+/* TEXTOS */
+.titulo-hero{
+    font-size: 70px;
+}
+.titulo{
+    font-size: 50px;
+}
+
+.parrafo{
+    font-size: 33px;
+}
+.lead{
+    font-size: 18px;
+    color: rgb(103, 103, 103);
+}
+
+.parrafo-principal{
+    font-size:28px;
+}
+.texto-center{
+    text-align: center;
+}
+
+.centrado-renglon{
+    justify-content: center;
+}
+.centrado-columna{
+    /* align-items: center; */
+    align-self: center;
+}
+
+.texto-hero{
+    color:black;
+    text-align: center;
+    font-size: 90px;
+    animation-duration: 6s;
+    animation-name: cambiarColor;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cambiarColor {
+
+    0% {
+        color:rgba(219, 215, 215, 0.96);
+    }
+    33% {
+        color: rgb(91, 176, 131);
+    }
+    66% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(109, 8, 122);
+    }
+}
+
+.color-blanco{
+    color: #fff;
+}

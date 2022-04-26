@@ -1,0 +1,50 @@
+.header{
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 80%;
+    margin: 0px;
+}
+
+.menu-opciones{
+    display: flex;
+    padding: 0px;
+}
+
+.menu-item{
+    color: rgb(126, 126, 128);
+    padding: 10px;
+    font-size: 20px;
+    list-style: none;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: all .1s ease-in;
+}
+
+.menu-item>a{
+    text-decoration:none;
+}
+
+.menu-item>a:hover{
+    text-decoration:none;
+}
+.menu-item>a:active{
+    text-decoration:none;
+}
+
+.menu-item>a:visited {
+    color: rgb(0, 0, 59);
+  }
+
+
+.menu-item:hover{
+    color: rgb(0, 0, 59);
+    padding: 10px;
+    list-style: none;
+    border-bottom: 2px solid rgb(37, 37, 167);
+    border-right: 2px solid rgb(37, 37, 167);
+}

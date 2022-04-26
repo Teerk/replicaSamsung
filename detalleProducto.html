@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar ahora</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/cssContenedores.css">
+    <link rel="stylesheet" href="css/cssFondos.css">
+    <link rel="stylesheet" href="css/cssTextos.css">
+    <link rel="stylesheet" href="css/cssComportamientos.css">
+    <link rel="stylesheet" href="css/cssTarjeta.css">
+    <link rel="stylesheet" href="css/cssMenu.css">
+    <link rel="stylesheet" href="css/cssFooter.css">
+    <link rel="stylesheet" href="css/cssHeroProdutos.css">
+    <link rel="stylesheet" href="css/cssBoton.css">
+</head>
+<body>
+
+    <script>
+
+
+
+        function cambiarImagen(rutaImagen, idElemento){
+            
+
+            document.querySelectorAll('div img');
+            document.querySelectorAll('div img').forEach(e => e.style.borderColor = "rgba(1, 2, 3, .01)")
+            
+            const hero_muestra =  document.getElementById("hero-muestra");
+            hero_muestra.src=rutaImagen;
+
+            
+            
+            const elementoSeleccionado = document.getElementById(idElemento);
+            elementoSeleccionado.style.border = 'blue';
+            elementoSeleccionado.style.borderStyle =  'solid';
+            elementoSeleccionado.style.borderColor = 'blue';
+
+            
+        }
+
+        function CambiarColorProducto(tipo){
+
+            const elemento =  document.getElementById('galeria');
+            elemento.innerHTML = "";
+
+            const recurso_zoom =  document.getElementById('recurso-zoom');
+            recurso_zoom.innerHTML = "";
+            
+            const texto_color_header =  document.getElementById('texto-color-header');
+            texto_color_header.innerHTML = "";
+
+            const texto_precio_header =  document.getElementById('texto-precio-header');
+            texto_precio_header.innerHTML = "";
+
+            const texto_color_descripcion =  document.getElementById('texto-color-descripcion');
+            texto_color_header.innerHTML = "";
+
+            const texto_precio_descripcion =  document.getElementById('texto-precio-descripcion');
+            texto_precio_header.innerHTML = "";
+            
+
+            const img_zoom = document.createElement("img");
+
+            switch (tipo) {
+                case 1:     
+                    texto_color_header.innerHTML = "Negro"; 
+                    texto_color_descripcion.innerHTML = "Negro";  
+                    texto_precio_header.innerHTML = "$2,999.00"; 
+                    texto_precio_descripcion.innerHTML = "$2,999.00";           
+                    img_zoom.id = 'hero-muestra';
+                    // img.onclick = "cambiarImagen('images/assets/img7.webp','hero-6')";
+                    img_zoom.src = `images/assets/img11.webp`;
+                    img_zoom.setAttribute("class", "img-zoom-tam muestra-zoom");
+                    recurso_zoom.appendChild(img_zoom);                
+
+                    for (let index = 7; index < 12; index++) {
+
+                        const img = document.createElement("img");
+                        img.id = `hero-${index}`;
+                        // img.onclick = "cambiarImagen('images/assets/img7.webp','hero-6')";
+                        img.src = `images/assets/img${index}.webp`;
+                        img.width = 100;
+                        img.addEventListener("click", function() {
+                            cambiarImagen(`images/assets/img${index}.webp`,`hero-${index}`);
+                            })
+
+                        elemento.appendChild(img);
+
+                    }
+                    break;
+
+                    case 2:
+                    texto_color_header.innerHTML = "Blanco"; 
+                    texto_color_descripcion.innerHTML = "Blanco";  
+                    texto_precio_header.innerHTML = "$2,590.00"; 
+                    texto_precio_descripcion.innerHTML = "$2,590.00";        
+                    img_zoom.id = 'hero-muestra';
+                    img_zoom.src = `images/assets/img16.webp`;
+                    img_zoom.setAttribute("class", "img-zoom-tam muestra-zoom");
+                    recurso_zoom.appendChild(img_zoom);
+
+                    for (let index = 12; index < 17; index++) {
+
+                        const img = document.createElement("img");
+                        img.id = `hero-${index}`;
+                        img.src = `images/assets/img${index}.webp`;
+                        img.width = 100;
+                        img.addEventListener("click", function() {
+                            cambiarImagen(`images/assets/img${index}.webp`,`hero-${index}`);
+                            })
+
+                        elemento.appendChild(img);
+
+                    }
+                    break;
+                    case 3:
+                    texto_color_header.innerHTML = "Olive"; 
+                    texto_color_descripcion.innerHTML = "Olive";  
+                    texto_precio_header.innerHTML = "$2,230.00"; 
+                    texto_precio_descripcion.innerHTML = "$2,230.00";      
+                    img_zoom.id = 'hero-muestra';
+                    img_zoom.src = `images/assets/img5.webp`;
+                    img_zoom.setAttribute("class", "img-zoom-tam muestra-zoom");
+                    recurso_zoom.appendChild(img_zoom);
+
+                    for (let index = 1; index < 6; index++) {
+
+                        const img = document.createElement("img");
+                        img.id = `hero-${index}`;
+                        img.src = `images/assets/img${index}.webp`;
+                        img.width = 100;
+                        img.addEventListener("click", function() {
+                            cambiarImagen(`images/assets/img${index}.webp`,`hero-${index}`);
+                            })
+
+
+                        elemento.appendChild(img);
+
+                    }
+                    break;
+                    case 4:
+                    texto_color_header.innerHTML = "Violeta"; 
+                    texto_color_descripcion.innerHTML = "Violeta";  
+                    texto_precio_header.innerHTML = "$2,120.00"; 
+                    texto_precio_descripcion.innerHTML = "$2,120.00";     
+                    img_zoom.id = 'hero-muestra';
+                    img_zoom.src = `images/assets/img21.webp`;
+                    img_zoom.setAttribute("class", "img-zoom-tam muestra-zoom");
+                    recurso_zoom.appendChild(img_zoom);
+
+                    for (let index = 17; index < 22; index++) {
+
+                        const img = document.createElement("img");
+                        img.id = `hero-${index}`;
+                        img.src = `images/assets/img${index}.webp`;
+                        img.width = 100;
+                        img.addEventListener("click", function() {
+                            cambiarImagen(`images/assets/img${index}.webp`,`hero-${index}`);
+                            })
+
+
+                        elemento.appendChild(img);
+
+                    }
+                    break;
+            
+                default:
+                    break;
+
+                    elemento.preventDefault();
+            }
+
+        }
+
+    </script>
+
+
+        <!-- MENÚ PRINCIPAL -->
+        <section class="header">
+            <section class="menu">
+                <ul class="menu-opciones">
+                    <li class="menu-item"><a href="./index.html">Buds+</a></li>
+                    <li class="menu-item"><a href="./detalleProducto.html">Descubre más</a></li>
+                    <li class="menu-item"><a href="./blog.html">Blog</a></li>
+                    <li class="menu-item"><a href="./contacto.html">Contacto</a></li>
+                    <li class="menu-item"><a href="./page404.html">Page 404</a></li>
+                </ul>
+            </section>
+        </section>
+
+
+    <div class="contenedor-principal">
+        <div class="contenedor-hijo h-100">
+
+            <div class="renglon color-blanco fondo-negro">
+                <div class="columna-10">
+                    <div class="renglon">
+                        <div class="columna-9">
+                            <h1>Galaxy Buds2 <span id="texto-color-header">Olive</span></h1>
+                           
+                        </div>
+                        <div class="columna-3 texto-center">
+                            <h1 ><span id="texto-precio-header">$2,900.00</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna-2 texto-center fondo-azul">
+                    <button class="boton boton-comprar">COMPRAR AHORA</button>
+                </div>
+            </div>
+
+            <div class="renglon">
+                <div class="columna-2" id="galeria">
+                    <img id="hero-1" onclick="cambiarImagen('images/assets/img1.webp','hero-1')" src="images/assets/img1.webp" width="100px" alt="">
+                    <img id="hero-2" onclick="cambiarImagen('images/assets/img2.webp','hero-2')" src="images/assets/img2.webp" width="100px" alt="">
+                    <img id="hero-3" onclick="cambiarImagen('images/assets/img3.webp','hero-3')" src="images/assets/img3.webp" width="100px" alt="">
+                    <img id="hero-4" onclick="cambiarImagen('images/assets/img4.webp','hero-4')" src="images/assets/img4.webp" width="100px" alt="">
+                    <img id="hero-5" onclick="cambiarImagen('images/assets/img5.webp','hero-5')" src="images/assets/img5.webp" width="100px" alt="">
+                </div>
+
+                <div class="columna-5" id="recurso-zoom">
+                    <img id="hero-muestra" class="muestra-zoom" src="./images/recurso1.webp" width="100%" alt="">
+                </div>
+
+
+                <div class="columna-5">
+                    <div>
+                        <h1>Galaxy Buds2 <span id="texto-color-descripcion">Olive</span></h1>
+                        <span>SM-R177NZGAMXO</span>
+                        <ul>
+                            <li>Sonido balanceado con bajos mejorados</li>
+                            <li>Tamaño y peso compactos</li>
+                            <li>Diseño más cómodo</li>
+                            <li>Quick Buds Control desde tu Watch </li>
+                        </ul>
+                        <span>Color: </span>
+                        <div class="renglon" style="justify-content: start;">
+                            <div onclick="CambiarColorProducto(1)" class="color color-tipo-1"></div>
+                            <div onclick="CambiarColorProducto(2)" class="color color-tipo-2"></div>
+                            <div onclick="CambiarColorProducto(3)" class="color color-tipo-3"></div>
+                            <div onclick="CambiarColorProducto(4)" class="color color-tipo-4"></div>
+                        </div>
+                        <h2>Precio del producto:</h2>
+                        <div>
+                            <span>Antes: $3,900.00</span>
+                            <h1><span id="texto-precio-descripcion">$2,900.00</span></h1>
+                        </div>
+                        <button class="boton boton-comprar">COMPRAR AHORA</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+        <!-- PRECIOS DEL PRODUCTO -->
+        <div class="contenedor-principal espacio-abajo espacio-arriba">
+            <div class="contenedor-hijo espacio-abajo">
+                <div>
+                    <h1 class="titulo texto-center">Te podría interesar</h1>
+                </div>
+                <div class="renglon">
+    
+                    <div class="tarjeta-producto">
+                        <div class="tarjeta-producto-img centrar-objeto">
+                            <img src="./images/recurso1.webp"  width="60%" alt="">
+                        </div>
+                        <div class="tarjeta-producto-titulo">
+                            <p style="font-size: 20px;">Galaxy Buds Verde</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <!-- <p>$400.00</p> -->
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <p>SM-325FDSF</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <p style="font-size: 15px; color: grey; text-decoration: line-through;">$490.00</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam tarjeta-producto-precio">
+                            <p>$389.00</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam tarjeta-producto-precio espacio-arriba">
+                            <button class="btn-comprar-ahora">
+                                <a href="./detalleProducto.html">COMPRAR AHORA</a>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="tarjeta-producto">
+                        <div class="tarjeta-producto-img centrar-objeto">
+                            <img src="./images/recurso2.webp" width="60%" alt="">
+                        </div>
+                        <div class="tarjeta-producto-titulo">
+                            <p style="font-size: 20px;">Galaxy Buds Negro</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <!-- <p>$400.00</p> -->
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <p>SM-325FDSF</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <p style="font-size: 15px; color: grey; text-decoration: line-through;">$900.00</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam tarjeta-producto-precio">
+                            <p>$499.00</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam tarjeta-producto-precio espacio-arriba">
+                            <button class="btn-comprar-ahora">
+                                <a href="./detalleProducto.html">COMPRAR AHORA</a>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="tarjeta-producto">
+                        <div class="tarjeta-producto-img centrar-objeto">
+                            <img src="./images/recurso3.webp" width="60%" alt="">
+                        </div>
+                        <div class="tarjeta-producto-titulo">
+                            <p style="font-size: 20px;">Galaxy Buds Live</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <!-- <p>$400.00</p> -->
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <p>SM-325FDSF</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam">
+                            <p style="font-size: 15px; color: grey; text-decoration: line-through;">$465.00</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam tarjeta-producto-precio">
+                            <p>$278.00</p>
+                        </div>
+                        <div class="tarjeta-producto-texto tarjeta-producto-tam tarjeta-producto-precio espacio-arriba">
+                            <button class="btn-comprar-ahora">
+                                <a href="./detalleProducto.html">COMPRAR AHORA</a>
+                            </button>
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <div class="contenedor-principal fondo-negro espacio-abajo espacio-arriba">
+        <div class="contenedor-hijo espacio-abajo espacio-arriba">
+            <div class="renglon espacio-abajo espacio-arriba">
+                <div class="columna-4">
+                    <h1 class="titulo-pie">Conócenos</h1>
+                    <hr class="salto-pie">
+                    <img src="./images/imgLogo.webp" width="150px" alt="">
+                    <p class="credito-pie">Hecho por: Antonio Garcia</p>
+                </div>
+                <div class="columna-4">
+                    <div>
+                        <h1 class="titulo-pie">Sobre Nosotros</h1>
+                        <hr class="salto-pie">
+                        <a class="ancla-pie" href="">Misión</a><br>
+                        <a class="ancla-pie" href="">Visión</a><br>
+                        <a class="ancla-pie" href="">Valores</a><br>
+                        <a class="ancla-pie" href="">Preguntas frecuentes</a>
+                    </div>
+                </div>
+                <div class="columna-4">
+                    <div>
+                        <h1 class="titulo-pie">Oferta de trabajo</h1>
+                        <hr class="salto-pie">
+                        <a class="ancla-pie" href="">Contrata talento</a><br>
+                        <a class="ancla-pie" href="">Explorar</a><br>
+                        <a class="ancla-pie" href="">Prensa</a><br>
+                        <a class="ancla-pie" href="">Blog</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* BACKGROUND */
+.fondo-azul{
+    background-color: rgb(33, 33, 192);
+}
+.fondo-negro{
+    background-color: black;
+}
+
+.fondo-negro-personalizado{
+    background-color:#273036;
+}
+
+.border-hero{
+    border-radius: 10px;
+
+    animation-duration: 3s;
+    animation-name: moverRadius;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    box-shadow: 10px 10px rgba(91, 88, 88, 0.249);
+}
+
+@keyframes moverRadius {
+    0% {
+        box-shadow: 10px 40px rgba(25, 62, 173, 0.96);
+      }
+      
+      25% {
+        box-shadow: 10px -40px rgba(25, 62, 173, 0.96);
+      }
+      50% {
+        box-shadow: -40px 10px rgba(25, 62, 173, 0.96);
+      }
+      75% {
+        box-shadow: 10px -40px rgba(25, 62, 173, 0.96);
+      }
+    
+      100% {
+        box-shadow: 40px 10px rgba(25, 62, 173, 0.96);
+      }
+    
+}
+.fondo-aux{
+    background-color:rgba(6, 6, 6, 0.742);
+}

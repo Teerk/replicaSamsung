@@ -1,0 +1,7 @@
+.contacto-card{
+    border: solid 2px rgb(56, 56, 56);
+    width: 33.33%;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}

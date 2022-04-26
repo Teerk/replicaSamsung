@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // EJERCICIO 1
+        // let dato, resultado;
+        // dato = window.prompt("Introduce tu nombre","Ingresa nombre aqui");
+        // resultado = `Hola, ${dato}`;    
+        // document.write(resultado);
+
+        // EJERCICIO 2
+        // let dato, num;
+        // dato = window.prompt("¿Introduce un número?","0");
+        // num = parseInt(dato);
+        // num =  num * 2;
+        // document.write(`El doble es ${num}`);
+
+
+        // EJERCICIO 6
+        // let dato1, dato2, num1, num2;
+
+        // dato1 = window.prompt("Introduce primer número?","0");
+        // num1 = parseInt(dato1);
+
+        // dato2 = window.prompt("Introduce primer número?","0");
+        // num2 = parseInt(dato2);
+
+        // let resultado = num1 + num2;
+
+        // document.write(`La suma es ${resultado}`);
+
+        function funcionUno(){
+            let resultado = "";
+            let i;
+            for(i=1; i<=6; i++){
+                resultado = resultado + `<h${i}>TITULO</h${i}>`;
+            }
+
+            document.getElementById("central").innerHTML= resultado;;
+
+        }
+        
+    
+
+    
+
+    </script>
+
+
+
+
+    <p>Pulsa el boton y se crean HTML tags de la 1 a la 6</p>
+    <button onclick="funcionUno()">
+        Pulsa aqui
+    </button>
+
+    <div id="central"></div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* CONTENEDORES */
+
+.contenedor-principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-hijo{
+    padding: 10px;
+    width: 80%;
+}
+
+.renglon{
+    display: flex;
+    justify-content: center;
+}
+
+.columna-2{
+    width:16.33%; 
+}
+.columna-3{
+    width: 25%;
+}
+.columna-4{
+    width: 33.33%;
+}
+.columna-5{
+    width: 41.65%;
+}
+.columna-6{
+    width: 50%;
+}
+.columna-7{
+    width: 57%;
+}
+.columna-8{
+    width: 65.2%;
+}
+.columna-9{
+    width: 73.35%;
+}
+.columna-10{
+    width: 81.6%;
+}
+
+.espacio-arriba{
+    padding-top: 40px;
+}
+.espacio-abajo{
+    padding-bottom: 40px;
+}
+
+.center-columna{
+    align-items: center;
+}
+
+.centrar-objeto{
+    display: flex; justify-content: center;
+}
+
+.h-100{
+    height: 100vh;
+}

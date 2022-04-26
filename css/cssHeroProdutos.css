@@ -1,0 +1,63 @@
+.posicion-absolute{
+    position: absolute;
+}
+
+.hero-prod{
+    width: 180px;
+    border: red solid 2px;
+}
+
+.hero-prod-posicion-1{
+    left: 200px;
+}
+.hero-prod-posicion-1{
+    left: 400px;
+}
+.hero-prod-posicion-2{
+    left: 600px;
+}
+.hero-prod-posicion-3{
+    left: 800px;
+}
+.hero-prod-posicion-4{
+    left: 1000px;
+}
+.hero-prod-posicion-5{
+    left: 1200px;
+}
+.hero-prod-posicion-6{
+    left: 1400px;
+}
+
+
+.color{
+    width: 35px;
+    height: 35px;
+    border: solid 4px rgb(227, 227, 227);
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.color-tipo-1{
+    background-color: #000;
+}
+.color-tipo-2{
+    background-color: #fff;
+}
+.color-tipo-3{
+    background-color: #676732;
+}
+.color-tipo-4{
+    background-color: #cb84e7;
+}
+.img-zoom-tam{
+    width: 100%;
+}
+
+.muestra-zoom{
+    transform: scale(1);
+    transition: all ease .5s;
+}
+.muestra-zoom:hover{
+    transform: scale(1.1);
+}
